@@ -45,12 +45,13 @@ h1 {
 }
 
 .txt-img {
-    background: hsl(256, 26%, 20%);
+    background: url(/images/bg-pattern-intro-right-mobile.svg) no-repeat, hsl(256, 26%, 20%);
+    background-position: bottom -190px right 0;
     color: hsl(0, 0%, 98%);
 }
 
 .humanizing-txt {
-    background: url(/images/bg-pattern-intro-left-mobile.svg), url(/images/bg-pattern-intro-right-mobile.svg);
+    background: url(/images/bg-pattern-intro-left-mobile.svg);
     background-repeat: no-repeat;
     background-position: top left, bottom right;
     margin-bottom: 80px;
@@ -90,15 +91,55 @@ h2 {
 .txt-icons {
     text-align: center;
     color: hsl(256, 26%, 20%);
-    margin: 30px;
+    margin: 15px 20px;
 
+}
+
+.gray-line {
+    border-bottom: 0.2px solid hsl(256, 18%, 36%);
+    width: 45%;
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.txt-icons h2 {
+    font-size: 45px;
+    padding: 40px 0 25px 0;
+}
+
+.icons {
+    padding: 60px 0 0 0;
 }
 
 h3 {
     font-family: 'DM Serif Display', serif;
     font-size: 30px;
     font-weight: 400;
-    padding: 95px 30px 20px 30px;
+    padding: 35px 30px 20px 30px;
+}
+
+.description {
+    color: hsl(273, 4%, 51%);
+    line-height: 25px;
+    padding: 0 5px;
+}
+
+.find-out {
+    background: url(/images/bg-pattern-how-we-work-mobile.svg), hsl(256, 26%, 20%);
+    background-repeat: no-repeat;
+    background-position: right;
+    color: hsl(0, 0%, 98%);
+    margin: 120px 0;
+}
+
+.find-out h2 {
+    font-size: 40px;
+    padding: 70px 25px 60px 25px;
+}
+
+.find-out .btn {
+    margin-bottom: 40px;
 }
 
 /* footer */
@@ -107,6 +148,42 @@ footer {
     width: 100%;
     text-align: center;
 }
+
+.social-media {
+    background: url(/images/bg-pattern-footer-mobile.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    line-height: 70px;
+    padding: 30px 90px;
+    margin: 25px auto;
+}
+
+.social {
+    display: inline-flex;
+}
+
+.social a {
+    height: 27px;
+    width: 27px;
+    display: inline-flex;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    align-content: center;
+}
+
+.social a[href*="facebook"] {
+    background-image: url(/images/icon-facebook.svg);
+}
+.social a[href*="twitter"] {
+    background-image: url(/images/icon-twitter.svg);
+}
+.social a[href*="pinterest"] {
+    background-image: url(/images/icon-pinterest.svg);
+}
+.social a[href*="instagram"] {
+    background-image: url(/images/icon-instagram.svg);
+}
+
 
 .footer-list {
     padding: 20px;
