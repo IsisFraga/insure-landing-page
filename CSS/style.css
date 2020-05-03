@@ -130,7 +130,7 @@ h3 {
     background-repeat: no-repeat;
     background-position: right;
     color: hsl(0, 0%, 98%);
-    margin: 120px 0;
+    margin: 120px 0 100px;
 }
 
 .find-out h2 {
@@ -150,16 +150,22 @@ footer {
 }
 
 .social-media {
-    background: url(/images/bg-pattern-footer-mobile.svg);
+    background: url(/images/bg-pattern-footer-mobile.svg), hsl(0, 0%, 98%);
     background-repeat: no-repeat;
     display: inline-block;
     line-height: 70px;
-    padding: 30px 90px;
-    margin: 25px auto;
+    padding: 65px 90px 0px 90px;
+    margin: 25px auto 0 auto;
 }
 
 .social {
     display: inline-flex;
+    align-items: center;
+    margin: auto;
+}
+
+.social-media li {
+    padding: 10px 5px;
 }
 
 .social a {
@@ -171,9 +177,14 @@ footer {
     align-content: center;
 }
 
+.social a:hover {
+    filter: brightness(0%);
+}
+
 .social a[href*="facebook"] {
     background-image: url(/images/icon-facebook.svg);
 }
+
 .social a[href*="twitter"] {
     background-image: url(/images/icon-twitter.svg);
 }
@@ -184,15 +195,42 @@ footer {
     background-image: url(/images/icon-instagram.svg);
 }
 
+.links {
+    border-top: 0.2px solid hsl(0, 3%, 82%);
+    width: 85%;
+    text-align: center;
+    margin: auto;
+}
 
 .footer-list {
-    padding: 20px;
+    margin-top: 20px;
+    padding: 20px 20px 0 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 30px;
+    color: hsl(253, 16%, 67%);
+    font-weight: 700;
+}
+
+.footer-list p {
+    padding-bottom: 20px;
+}
+
+.footer-list a {
+    text-decoration: none;
+    color: hsl(256, 26%, 20%);
+}
+
+.footer-list a:hover{
+    text-decoration: underline;
+    color: hsl(256, 26%, 20%);
 }
 
 .attribution { 
+    margin-top: 40px;
     font-size: 11px; 
     text-align: center; 
 }
 .attribution a {
-     color: hsl(228, 45%, 44%); 
+     color: hsl(256, 26%, 20%);
     }
