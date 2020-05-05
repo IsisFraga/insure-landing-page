@@ -59,6 +59,10 @@ h1 {
     transition: all 0.3s ease-in-out;
 }
 
+.menu-desk {
+    display: none;
+}
+
 .nav li {
     padding-top: 35px;
 }
@@ -79,11 +83,13 @@ li .btn {
 
 .txt-img {
     color: hsl(0, 0%, 98%);
+    width: 100%;
 }
 
 .bg-color {
     background: url(/images/bg-pattern-intro-right-mobile.svg) no-repeat, hsl(256, 26%, 20%);
     background-position: bottom -190px right -5px;
+    width: 100%;
 }
 
 .humanizing-txt {
@@ -275,4 +281,65 @@ footer {
 
 @media (min-width: 939px) {
 
+    header {
+        margin: 25px 160px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .menu-desk {
+        display: block;
+        width: 40%;
+    }
+
+    .menu-desk ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+    .nav-desk a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color:  hsl(273, 4%, 51%);
+        font-weight: 700;
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    .menu-desk ul li .btn {
+        font-weight: 700;
+        color:hsl(270, 9%, 17%);
+        background-color: #fff;
+        border: 1px solid hsl(270, 9%, 17%);
+        font-size: 15px;
+        padding: 10px 25px;
+    }
+
+    .dropbtn {
+        display:none;
+    }
+
+    .bg-color {
+        display: inline-flex;
+        flex-direction: row;
+    }
+
+    .bg-color img {
+        position: absolute;
+        transform: scale(1.3, 1.3);
+        margin-left: 60%;
+        padding: 10% 0;
+    }
+
+    .humanizing-txt {
+        text-align: left;
+        left: 0;
+        width: 50%;
+        flex-direction: row;
+    }
 }
