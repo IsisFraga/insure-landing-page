@@ -281,6 +281,10 @@ footer {
 
 @media (min-width: 939px) {
 
+    body {
+        max-width: 1440px;
+    }
+
     header {
         margin: 25px 160px;
         display: flex;
@@ -368,6 +372,11 @@ footer {
         width: 15%;
     }
 
+    .process {
+        display: flex;
+        flex-direction: column;
+    }
+
     .icons {
         padding: 0;
         width: fit-content;
@@ -379,5 +388,9 @@ footer {
         display: block;
         width: fit-content;
         height: fit-content;
+    }
+
+    .find-out {
+        position: absolute;
     }
 }
