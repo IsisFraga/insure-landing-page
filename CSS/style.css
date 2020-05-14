@@ -302,6 +302,7 @@ footer {
 
     body {
         max-width: 1440px;
+        margin: auto;
     }
 
     header {
@@ -310,6 +311,10 @@ footer {
         justify-content: space-between;
         flex-direction: row;
         align-items: center;
+    }
+
+    main {
+        width: 1440px;
     }
 
     .menu {
@@ -370,13 +375,15 @@ footer {
         display: inline-flex;
         flex-direction: row;
         height: 600px;
+        width: 1440px;
+        position: relative;
     }
 
     .bg-color img {
         position: absolute;
         transform: scale(1.45, 1.45);
-        margin-left: 60%;
-        top: 300px;
+        left: 835px;
+        top: 200px;
     }
 
     .bg-color::before {
@@ -400,7 +407,7 @@ footer {
         content: " ";
         display: block;
         width: 150px;
-        border-top: 1px solid hsl(273, 4%, 51%);
+        border-top: 1px solid #fff;
         position: relative;
         top: -41px;
     }
