@@ -250,7 +250,7 @@ footer {
     width: 400px;
     height: 300px;
     content: " ";
-    right: 0px;
+    right: calc(100% - 380px);
 }
 
 .social-media img {
