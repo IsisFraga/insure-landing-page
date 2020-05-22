@@ -1,4 +1,4 @@
-Click here to se this project :)
+Click here to see this project :)
 https://insure-landing-page-isis.netlify.app
 
 
